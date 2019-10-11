@@ -1,0 +1,482 @@
+/* Flowchart variables */
+/* Sequence Diagram variables */
+/* Gantt chart variables */
+.label {
+    font-family: "trebuchet ms", verdana, arial !important;
+    color: #333 !important;
+}
+
+.label text {
+    fill: #333 !important;
+}
+
+.node rect,
+.node circle,
+.node ellipse,
+.node polygon {
+    fill: #ECECFF !important;
+    stroke: #9370DB !important;
+    stroke-width: 1px !important;
+}
+
+.node.clickable {
+    cursor: pointer !important;
+}
+
+.arrowheadPath {
+    fill: #333333 !important;
+}
+
+.edgePath .path {
+    stroke: #333333 !important;
+    stroke-width: 1.5px !important;
+}
+
+.edgeLabel {
+    background-color: #e8e8e8 !important;
+}
+
+.cluster rect {
+    fill: #ffffde !important;
+    stroke: #aaaa33 !important;
+    stroke-width: 1px !important;
+}
+
+.cluster text {
+    fill: #333 !important;
+}
+
+div.mermaidTooltip {
+    position: absolute !important;
+    text-align: center !important;
+    max-width: 200px !important;
+    padding: 2px !important;
+    font-family: "trebuchet ms", verdana, arial !important;
+    font-size: 12px !important;
+    background: #ffffde !important;
+    border: 1px solid #aaaa33 !important;
+    border-radius: 2px !important;
+    pointer-events: none !important;
+    z-index: 100 !important;
+}
+
+.actor {
+    stroke: #CCCCFF !important;
+    fill: #ECECFF !important;
+}
+
+text.actor {
+    fill: black !important;
+    stroke: none !important;
+}
+
+.actor-line {
+    stroke: grey !important;
+}
+
+.messageLine0 {
+    stroke-width: 1.5 !important;
+    stroke-dasharray: "2 2" !important;
+    stroke: #333 !important;
+}
+
+.messageLine1 {
+    stroke-width: 1.5 !important;
+    stroke-dasharray: "2 2" !important;
+    stroke: #333 !important;
+}
+
+#arrowhead {
+    fill: #333 !important;
+}
+
+.sequenceNumber {
+    fill: white !important;
+}
+
+#sequencenumber {
+    fill: #333 !important;
+}
+
+#crosshead path {
+    fill: #333 !important;
+    stroke: #333 !important;
+}
+
+.messageText {
+    fill: #333 !important;
+    stroke: none !important;
+}
+
+.labelBox {
+    stroke: #CCCCFF !important;
+    fill: #ECECFF !important;
+}
+
+.labelText {
+    fill: black !important;
+    stroke: none !important;
+}
+
+.loopText {
+    fill: black !important;
+    stroke: none !important;
+}
+
+.loopLine {
+    stroke-width: 2 !important;
+    stroke-dasharray: "2 2" !important;
+    stroke: #CCCCFF !important;
+}
+
+.note {
+    stroke: #aaaa33 !important;
+    fill: #fff5ad !important;
+}
+
+.noteText {
+    fill: black !important;
+    stroke: none !important;
+    font-family: "trebuchet ms", verdana, arial !important;
+    font-size: 14px !important;
+}
+
+.activation0 {
+    fill: #f4f4f4 !important;
+    stroke: #666 !important;
+}
+
+.activation1 {
+    fill: #f4f4f4 !important;
+    stroke: #666 !important;
+}
+
+.activation2 {
+    fill: #f4f4f4 !important;
+    stroke: #666 !important;
+}
+
+/** Section styling */
+.section {
+    stroke: none !important;
+    opacity: 0.2 !important;
+}
+
+.section0 {
+    fill: rgba(102, 102, 255, 0.49) !important;
+}
+
+.section2 {
+    fill: #fff400 !important;
+}
+
+.section1,
+.section3 {
+    fill: white !important;
+    opacity: 0.2 !important;
+}
+
+.sectionTitle0 {
+    fill: #333 !important;
+}
+
+.sectionTitle1 {
+    fill: #333 !important;
+}
+
+.sectionTitle2 {
+    fill: #333 !important;
+}
+
+.sectionTitle3 {
+    fill: #333 !important;
+}
+
+.sectionTitle {
+    text-anchor: start !important;
+    font-size: 11px !important;
+    text-height: 14px !important;
+}
+
+/* Grid and axis */
+.grid .tick {
+    stroke: lightgrey !important;
+    opacity: 0.3 !important;
+    shape-rendering: crispEdges !important;
+}
+
+.grid path {
+    stroke-width: 0 !important;
+}
+
+/* Today line */
+.today {
+    fill: none !important;
+    stroke: red !important;
+    stroke-width: 2px !important;
+}
+
+/* Task styling */
+/* Default task */
+.task {
+    stroke-width: 2 !important;
+}
+
+.taskText {
+    text-anchor: middle !important;
+    font-size: 11px !important;
+}
+
+.taskTextOutsideRight {
+    fill: black !important;
+    text-anchor: start !important;
+    font-size: 11px !important;
+}
+
+.taskTextOutsideLeft {
+    fill: black !important;
+    text-anchor: end !important;
+    font-size: 11px !important;
+}
+
+/* Special case clickable */
+.task.clickable {
+    cursor: pointer !important;
+}
+
+.taskText.clickable {
+    cursor: pointer !important;
+    fill: #003163 !important;
+    font-weight: bold !important;
+}
+
+.taskTextOutsideLeft.clickable {
+    cursor: pointer !important;
+    fill: #003163 !important;
+    font-weight: bold !important;
+}
+
+.taskTextOutsideRight.clickable {
+    cursor: pointer !important;
+    fill: #003163 !important;
+    font-weight: bold !important;
+}
+
+/* Specific task settings for the sections*/
+.taskText0,
+.taskText1,
+.taskText2,
+.taskText3 {
+    fill: white !important;
+}
+
+.task0,
+.task1,
+.task2,
+.task3 {
+    fill: #8a90dd !important;
+    stroke: #534fbc !important;
+}
+
+.taskTextOutside0,
+.taskTextOutside2 {
+    fill: black !important;
+}
+
+.taskTextOutside1,
+.taskTextOutside3 {
+    fill: black !important;
+}
+
+/* Active task */
+.active0,
+.active1,
+.active2,
+.active3 {
+    fill: #bfc7ff !important;
+    stroke: #534fbc !important;
+}
+
+.activeText0,
+.activeText1,
+.activeText2,
+.activeText3 {
+    fill: black !important;
+}
+
+/* Completed task */
+.done0,
+.done1,
+.done2,
+.done3 {
+    stroke: grey !important;
+    fill: lightgrey !important;
+    stroke-width: 2 !important;
+}
+
+.doneText0,
+.doneText1,
+.doneText2,
+.doneText3 {
+    fill: black !important;
+}
+
+/* Tasks on the critical line */
+.crit0,
+.crit1,
+.crit2,
+.crit3 {
+    stroke: #ff8888 !important;
+    fill: red !important;
+    stroke-width: 2 !important;
+}
+
+.activeCrit0,
+.activeCrit1,
+.activeCrit2,
+.activeCrit3 {
+    stroke: #ff8888 !important;
+    fill: #bfc7ff !important;
+    stroke-width: 2 !important;
+}
+
+.doneCrit0,
+.doneCrit1,
+.doneCrit2,
+.doneCrit3 {
+    stroke: #ff8888 !important;
+    fill: lightgrey !important;
+    stroke-width: 2 !important;
+    cursor: pointer !important;
+    shape-rendering: crispEdges !important;
+}
+
+.milestone {
+    transform: rotate(45deg) scale(0.8, 0.8) !important;
+}
+
+.milestoneText {
+    font-style: italic !important;
+}
+
+.doneCritText0,
+.doneCritText1,
+.doneCritText2,
+.doneCritText3 {
+    fill: black !important;
+}
+
+.activeCritText0,
+.activeCritText1,
+.activeCritText2,
+.activeCritText3 {
+    fill: black !important;
+}
+
+.titleText {
+    text-anchor: middle !important;
+    font-size: 18px !important;
+    fill: black !important;
+}
+
+g.classGroup text {
+    fill: #9370DB !important;
+    stroke: none !important;
+    font-family: "trebuchet ms", verdana, arial !important;
+    font-size: 10px !important;
+}
+
+g.classGroup text .title {
+    font-weight: bolder !important;
+}
+
+g.classGroup rect {
+    fill: #ECECFF !important;
+    stroke: #9370DB !important;
+}
+
+g.classGroup line {
+    stroke: #9370DB !important;
+    stroke-width: 1 !important;
+}
+
+.classLabel .box {
+    stroke: none !important;
+    stroke-width: 0 !important;
+    fill: #ECECFF !important;
+    opacity: 0.5 !important;
+}
+
+.classLabel .label {
+    fill: #9370DB !important;
+    font-size: 10px !important;
+}
+
+.relation {
+    stroke: #9370DB !important;
+    stroke-width: 1 !important;
+    fill: none !important;
+}
+
+#compositionStart {
+    fill: #9370DB !important;
+    stroke: #9370DB !important;
+    stroke-width: 1 !important;
+}
+
+#compositionEnd {
+    fill: #9370DB !important;
+    stroke: #9370DB !important;
+    stroke-width: 1 !important;
+}
+
+#aggregationStart {
+    fill: #ECECFF !important;
+    stroke: #9370DB !important;
+    stroke-width: 1 !important;
+}
+
+#aggregationEnd {
+    fill: #ECECFF !important;
+    stroke: #9370DB !important;
+    stroke-width: 1 !important;
+}
+
+#dependencyStart {
+    fill: #9370DB !important;
+    stroke: #9370DB !important;
+    stroke-width: 1 !important;
+}
+
+#dependencyEnd {
+    fill: #9370DB !important;
+    stroke: #9370DB !important;
+    stroke-width: 1 !important;
+}
+
+#extensionStart {
+    fill: #9370DB !important;
+    stroke: #9370DB !important;
+    stroke-width: 1 !important;
+}
+
+#extensionEnd {
+    fill: #9370DB !important;
+    stroke: #9370DB !important;
+    stroke-width: 1 !important;
+}
+
+.commit-id,
+.commit-msg,
+.branch-label {
+    fill: lightgrey !important;
+    color: lightgrey !important;
+}
+
+.pieTitleText {
+    text-anchor: middle !important;
+    font-size: 25px !important;
+    fill: black !important;
+}
+
+/*# sourceMappingURL=default.css.map */
